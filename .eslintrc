@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": 0,
+    "react/forbid-prop-types": 0,
+    "linebreak-style": 0,
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": true,
+      "optionalDependencies": true,
+      "peerDependencies": true
+    }]
+  },
+  "plugins": ["jest", "prettier"],
+  "env": {
+    "jest/globals": true
+  }
+}

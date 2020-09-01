@@ -1,0 +1,66 @@
+{
+  "name": "tribhus-middleware",
+  "version": "0.4.1",
+  "description": "Connection between fronts and firebase",
+  "main": "src/index.js",
+  "lint-staged": {
+    "./src/**/*.js": "eslint"
+  },
+  "precommit": [
+    "lints"
+  ],
+  "scripts": {
+    "generate": "plop",
+    "test": "babel-node test/index.js",
+    "start": "yarn start",
+    "jest": "jest --coverage",
+    "lint": "eslint .",
+    "lints": "lint-staged",
+    "fix": "eslint . --fix"
+  },
+  "repository": "git@gitlab.com:softwrap/tribhus/middleware.git",
+  "private": true,
+  "peerDependencies": {
+    "axios": "^0.19.1",
+    "firebase": "^7.6.2",
+    "immutable": "^4.0.0-rc.12",
+    "react": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.8.0",
+    "@babel/preset-env": "^7.7.7",
+    "@firebase/testing": "^0.16.5",
+    "axios": "^0.19.1",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "firebase": "^7.6.2",
+    "handlebars": "^4.5.0",
+    "immutable": "^4.0.0-rc.12",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.1",
+    "plop": "^2.4.0",
+    "pre-commit": "^1.2.2",
+    "react": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.0.0"
+  },
+  "dependencies": {
+    "redux-saga-test": "^1.0.1"
+  }
+}
